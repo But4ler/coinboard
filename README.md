@@ -16,3 +16,5 @@ git clone https://github.com/arnobroekhof/coinboard.git
 cd coinboard
 make run
 ```
+
+open grafana and import the [dashboard](https://github.com/arnobroekhof/coinboard/blob/master/grafana/binance-dashboard.json) into grafana 
