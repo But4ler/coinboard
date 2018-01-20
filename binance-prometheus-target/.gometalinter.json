@@ -1,0 +1,13 @@
+{
+  "Enable": [
+    "vet",
+    "interfacer",
+    "ineffassign",
+    "golint",
+    "gas",
+    "goconst",
+    "gocyclo",
+    "deadcode",
+    "unconvert"
+  ]
+}

@@ -1,0 +1,57 @@
+version: "3.2"
+services:
+    prometheus:
+        image: arnobroekhof/prometheus:latest  # autobuild from Dockerfile in repo.
+        ports:
+        - 9090:9090
+        environment:
+            no_proxy: "gateway"
+        networks:
+            - prometheus
+        deploy:
+            resources:
+                limits:
+                    memory: 500M
+                reservations:
+                    memory: 200M
+            placement:
+                constraints:
+                    - 'node.role == manager'
+                    - 'node.platform.os == linux'
+
+    grafana:
+      image: grafana/grafana
+      ports:
+      - 3000:3000
+      networks:
+      - prometheus
+    alertmanager:
+        image: arnobroekhof/alertmanager:latest    # autobuild from Dockerfile in repo.
+        environment:
+            no_proxy: "gateway"
+        networks:
+            - prometheus
+        # comment the following port mapping if you do not wish to expose the Prometheus
+        # Alertmanager UI.
+        ports:
+        - 9093:9093
+        deploy:
+            resources:
+                limits:
+                    memory: 50M
+                reservations:
+                    memory: 20M
+            placement:
+                constraints: 
+                    - 'node.role == manager'
+                    - 'node.platform.os == linux'
+    binance-prometheus-target:
+        image: arnobroekhof/binance-prometheus-target:latest
+        networks:
+        - prometheus
+        ports:
+        - "127.0.0.1:8609:8609"
+networks:
+    prometheus:
+        driver: overlay
+        attachable: true

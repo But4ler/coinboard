@@ -1,0 +1,1858 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "hideControls": false,
+  "id": 1,
+  "links": [],
+  "rows": [
+    {
+      "collapse": false,
+      "height": 250,
+      "panels": [
+        {
+          "cacheTimeout": null,
+          "colorBackground": false,
+          "colorValue": true,
+          "colors": [
+            "#299c46",
+            "rgba(237, 129, 40, 0.89)",
+            "#d44a3a"
+          ],
+          "datasource": null,
+          "format": "currencyUSD",
+          "gauge": {
+            "maxValue": 100,
+            "minValue": 0,
+            "show": false,
+            "thresholdLabels": false,
+            "thresholdMarkers": true
+          },
+          "id": 2,
+          "interval": null,
+          "links": [],
+          "mappingType": 1,
+          "mappingTypes": [
+            {
+              "name": "value to text",
+              "value": 1
+            },
+            {
+              "name": "range to text",
+              "value": 2
+            }
+          ],
+          "maxDataPoints": 100,
+          "nullPointMode": "connected",
+          "nullText": null,
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "rangeMaps": [
+            {
+              "from": "null",
+              "text": "N/A",
+              "to": "null"
+            }
+          ],
+          "span": 2,
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": true,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": true
+          },
+          "tableColumn": "",
+          "targets": [
+            {
+              "expr": "binance_coin_price{symbol='LTCUSDT'}",
+              "format": "time_series",
+              "intervalFactor": 1,
+              "legendFormat": "$coin",
+              "refId": "A"
+            }
+          ],
+          "thresholds": "",
+          "title": "1 LTC dollar price",
+          "type": "singlestat",
+          "valueFontSize": "80%",
+          "valueMaps": [
+            {
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueName": "current"
+        },
+        {
+          "cacheTimeout": null,
+          "colorBackground": false,
+          "colorValue": true,
+          "colors": [
+            "#299c46",
+            "rgba(237, 129, 40, 0.89)",
+            "#d44a3a"
+          ],
+          "datasource": null,
+          "format": "currencyUSD",
+          "gauge": {
+            "maxValue": 100,
+            "minValue": 0,
+            "show": false,
+            "thresholdLabels": false,
+            "thresholdMarkers": true
+          },
+          "id": 3,
+          "interval": null,
+          "links": [],
+          "mappingType": 1,
+          "mappingTypes": [
+            {
+              "name": "value to text",
+              "value": 1
+            },
+            {
+              "name": "range to text",
+              "value": 2
+            }
+          ],
+          "maxDataPoints": 100,
+          "nullPointMode": "connected",
+          "nullText": null,
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "rangeMaps": [
+            {
+              "from": "null",
+              "text": "N/A",
+              "to": "null"
+            }
+          ],
+          "span": 2,
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": true,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": true
+          },
+          "tableColumn": "",
+          "targets": [
+            {
+              "expr": "binance_coin_price{symbol='BTCUSDT'}",
+              "format": "time_series",
+              "intervalFactor": 2,
+              "legendFormat": "",
+              "refId": "A"
+            }
+          ],
+          "thresholds": "",
+          "title": "1 BTC dollar price",
+          "type": "singlestat",
+          "valueFontSize": "80%",
+          "valueMaps": [
+            {
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueName": "current"
+        },
+        {
+          "cacheTimeout": null,
+          "colorBackground": false,
+          "colorValue": true,
+          "colors": [
+            "#299c46",
+            "rgba(237, 129, 40, 0.89)",
+            "#d44a3a"
+          ],
+          "datasource": null,
+          "format": "currencyUSD",
+          "gauge": {
+            "maxValue": 100,
+            "minValue": 0,
+            "show": false,
+            "thresholdLabels": false,
+            "thresholdMarkers": true
+          },
+          "id": 4,
+          "interval": null,
+          "links": [],
+          "mappingType": 1,
+          "mappingTypes": [
+            {
+              "name": "value to text",
+              "value": 1
+            },
+            {
+              "name": "range to text",
+              "value": 2
+            }
+          ],
+          "maxDataPoints": 100,
+          "nullPointMode": "connected",
+          "nullText": null,
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "rangeMaps": [
+            {
+              "from": "null",
+              "text": "N/A",
+              "to": "null"
+            }
+          ],
+          "span": 2,
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": true,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": true
+          },
+          "tableColumn": "",
+          "targets": [
+            {
+              "expr": "binance_coin_price{symbol='ETHUSDT'}",
+              "format": "time_series",
+              "intervalFactor": 2,
+              "refId": "A"
+            }
+          ],
+          "thresholds": "",
+          "title": "1 ETH dollar price",
+          "type": "singlestat",
+          "valueFontSize": "80%",
+          "valueMaps": [
+            {
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueName": "current"
+        },
+        {
+          "cacheTimeout": null,
+          "colorBackground": false,
+          "colorValue": true,
+          "colors": [
+            "#299c46",
+            "rgba(237, 129, 40, 0.89)",
+            "#d44a3a"
+          ],
+          "datasource": null,
+          "format": "currencyUSD",
+          "gauge": {
+            "maxValue": 100,
+            "minValue": 0,
+            "show": false,
+            "thresholdLabels": false,
+            "thresholdMarkers": true
+          },
+          "id": 5,
+          "interval": null,
+          "links": [],
+          "mappingType": 1,
+          "mappingTypes": [
+            {
+              "name": "value to text",
+              "value": 1
+            },
+            {
+              "name": "range to text",
+              "value": 2
+            }
+          ],
+          "maxDataPoints": 100,
+          "nullPointMode": "connected",
+          "nullText": null,
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "rangeMaps": [
+            {
+              "from": "null",
+              "text": "N/A",
+              "to": "null"
+            }
+          ],
+          "span": 2,
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": true,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": true
+          },
+          "tableColumn": "",
+          "targets": [
+            {
+              "expr": "binance_coin_price{symbol='BCCUSDT'}",
+              "format": "time_series",
+              "intervalFactor": 2,
+              "refId": "A"
+            }
+          ],
+          "thresholds": "",
+          "title": "1 BCC dollar price",
+          "type": "singlestat",
+          "valueFontSize": "80%",
+          "valueMaps": [
+            {
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueName": "current"
+        },
+        {
+          "cacheTimeout": null,
+          "colorBackground": false,
+          "colorValue": true,
+          "colors": [
+            "#299c46",
+            "rgba(237, 129, 40, 0.89)",
+            "#d44a3a"
+          ],
+          "datasource": null,
+          "format": "currencyUSD",
+          "gauge": {
+            "maxValue": 100,
+            "minValue": 0,
+            "show": false,
+            "thresholdLabels": false,
+            "thresholdMarkers": true
+          },
+          "id": 6,
+          "interval": null,
+          "links": [],
+          "mappingType": 1,
+          "mappingTypes": [
+            {
+              "name": "value to text",
+              "value": 1
+            },
+            {
+              "name": "range to text",
+              "value": 2
+            }
+          ],
+          "maxDataPoints": 100,
+          "nullPointMode": "connected",
+          "nullText": null,
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "rangeMaps": [
+            {
+              "from": "null",
+              "text": "N/A",
+              "to": "null"
+            }
+          ],
+          "span": 2,
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": true,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": true
+          },
+          "tableColumn": "",
+          "targets": [
+            {
+              "expr": "binance_coin_price{symbol='NEOUSDT'}",
+              "format": "time_series",
+              "intervalFactor": 2,
+              "refId": "A"
+            }
+          ],
+          "thresholds": "",
+          "title": "1 NEO dollar price",
+          "type": "singlestat",
+          "valueFontSize": "80%",
+          "valueMaps": [
+            {
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueName": "current"
+        },
+        {
+          "cacheTimeout": null,
+          "colorBackground": false,
+          "colorValue": true,
+          "colors": [
+            "#299c46",
+            "rgba(237, 129, 40, 0.89)",
+            "#d44a3a"
+          ],
+          "datasource": null,
+          "format": "currencyUSD",
+          "gauge": {
+            "maxValue": 100,
+            "minValue": 0,
+            "show": false,
+            "thresholdLabels": false,
+            "thresholdMarkers": true
+          },
+          "id": 7,
+          "interval": null,
+          "links": [],
+          "mappingType": 1,
+          "mappingTypes": [
+            {
+              "name": "value to text",
+              "value": 1
+            },
+            {
+              "name": "range to text",
+              "value": 2
+            }
+          ],
+          "maxDataPoints": 100,
+          "nullPointMode": "connected",
+          "nullText": null,
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "rangeMaps": [
+            {
+              "from": "null",
+              "text": "N/A",
+              "to": "null"
+            }
+          ],
+          "span": 2,
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": true,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": true
+          },
+          "tableColumn": "",
+          "targets": [
+            {
+              "expr": "( sum(binance_coin_price{symbol='BTCUSDT'}) * sum(binance_coin_price{symbol='$coin'}) )",
+              "format": "time_series",
+              "intervalFactor": 2,
+              "refId": "A"
+            }
+          ],
+          "thresholds": "",
+          "title": "1 $coin dollar price",
+          "type": "singlestat",
+          "valueFontSize": "80%",
+          "valueMaps": [
+            {
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueName": "current"
+        }
+      ],
+      "repeat": null,
+      "repeatIteration": null,
+      "repeatRowId": null,
+      "showTitle": false,
+      "title": "Dashboard Row",
+      "titleSize": "h6"
+    },
+    {
+      "collapse": false,
+      "height": "500px",
+      "panels": [
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "datasource": null,
+          "fill": 1,
+          "height": "450px",
+          "hideTimeOverride": false,
+          "id": 1,
+          "legend": {
+            "alignAsTable": true,
+            "avg": true,
+            "current": true,
+            "max": true,
+            "min": true,
+            "rightSide": true,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "spaceLength": 10,
+          "span": 12,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "binance_coin_price{symbol='$coin'}",
+              "format": "time_series",
+              "interval": "",
+              "intervalFactor": 2,
+              "legendFormat": "$coin",
+              "refId": "A"
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "$coin Price",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        }
+      ],
+      "repeat": null,
+      "repeatIteration": null,
+      "repeatRowId": null,
+      "showTitle": false,
+      "title": "Dashboard Row",
+      "titleSize": "h6"
+    }
+  ],
+  "schemaVersion": 14,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": [
+      {
+        "allValue": null,
+        "current": {
+          "tags": [],
+          "text": "LTCBTC",
+          "value": "LTCBTC"
+        },
+        "datasource": "prometheus",
+        "hide": 0,
+        "includeAll": false,
+        "label": "Crypto Coin",
+        "multi": false,
+        "name": "coin",
+        "options": [
+          {
+            "selected": false,
+            "text": "123456",
+            "value": "123456"
+          },
+          {
+            "selected": false,
+            "text": "ADABTC",
+            "value": "ADABTC"
+          },
+          {
+            "selected": false,
+            "text": "ADAETH",
+            "value": "ADAETH"
+          },
+          {
+            "selected": false,
+            "text": "ADXBNB",
+            "value": "ADXBNB"
+          },
+          {
+            "selected": false,
+            "text": "ADXBTC",
+            "value": "ADXBTC"
+          },
+          {
+            "selected": false,
+            "text": "ADXETH",
+            "value": "ADXETH"
+          },
+          {
+            "selected": false,
+            "text": "AIONBNB",
+            "value": "AIONBNB"
+          },
+          {
+            "selected": false,
+            "text": "AIONBTC",
+            "value": "AIONBTC"
+          },
+          {
+            "selected": false,
+            "text": "AIONETH",
+            "value": "AIONETH"
+          },
+          {
+            "selected": false,
+            "text": "AMBBNB",
+            "value": "AMBBNB"
+          },
+          {
+            "selected": false,
+            "text": "AMBBTC",
+            "value": "AMBBTC"
+          },
+          {
+            "selected": false,
+            "text": "AMBETH",
+            "value": "AMBETH"
+          },
+          {
+            "selected": false,
+            "text": "APPCBNB",
+            "value": "APPCBNB"
+          },
+          {
+            "selected": false,
+            "text": "APPCBTC",
+            "value": "APPCBTC"
+          },
+          {
+            "selected": false,
+            "text": "APPCETH",
+            "value": "APPCETH"
+          },
+          {
+            "selected": false,
+            "text": "ARKBTC",
+            "value": "ARKBTC"
+          },
+          {
+            "selected": false,
+            "text": "ARKETH",
+            "value": "ARKETH"
+          },
+          {
+            "selected": false,
+            "text": "ARNBTC",
+            "value": "ARNBTC"
+          },
+          {
+            "selected": false,
+            "text": "ARNETH",
+            "value": "ARNETH"
+          },
+          {
+            "selected": false,
+            "text": "ASTBTC",
+            "value": "ASTBTC"
+          },
+          {
+            "selected": false,
+            "text": "ASTETH",
+            "value": "ASTETH"
+          },
+          {
+            "selected": false,
+            "text": "BATBNB",
+            "value": "BATBNB"
+          },
+          {
+            "selected": false,
+            "text": "BATBTC",
+            "value": "BATBTC"
+          },
+          {
+            "selected": false,
+            "text": "BATETH",
+            "value": "BATETH"
+          },
+          {
+            "selected": false,
+            "text": "BCCBNB",
+            "value": "BCCBNB"
+          },
+          {
+            "selected": false,
+            "text": "BCCBTC",
+            "value": "BCCBTC"
+          },
+          {
+            "selected": false,
+            "text": "BCCETH",
+            "value": "BCCETH"
+          },
+          {
+            "selected": false,
+            "text": "BCCUSDT",
+            "value": "BCCUSDT"
+          },
+          {
+            "selected": false,
+            "text": "BCDBTC",
+            "value": "BCDBTC"
+          },
+          {
+            "selected": false,
+            "text": "BCDETH",
+            "value": "BCDETH"
+          },
+          {
+            "selected": false,
+            "text": "BCPTBNB",
+            "value": "BCPTBNB"
+          },
+          {
+            "selected": false,
+            "text": "BCPTBTC",
+            "value": "BCPTBTC"
+          },
+          {
+            "selected": false,
+            "text": "BCPTETH",
+            "value": "BCPTETH"
+          },
+          {
+            "selected": false,
+            "text": "BNBBTC",
+            "value": "BNBBTC"
+          },
+          {
+            "selected": false,
+            "text": "BNBETH",
+            "value": "BNBETH"
+          },
+          {
+            "selected": false,
+            "text": "BNBUSDT",
+            "value": "BNBUSDT"
+          },
+          {
+            "selected": false,
+            "text": "BNTBTC",
+            "value": "BNTBTC"
+          },
+          {
+            "selected": false,
+            "text": "BNTETH",
+            "value": "BNTETH"
+          },
+          {
+            "selected": false,
+            "text": "BQXBTC",
+            "value": "BQXBTC"
+          },
+          {
+            "selected": false,
+            "text": "BQXETH",
+            "value": "BQXETH"
+          },
+          {
+            "selected": false,
+            "text": "BRDBNB",
+            "value": "BRDBNB"
+          },
+          {
+            "selected": false,
+            "text": "BRDBTC",
+            "value": "BRDBTC"
+          },
+          {
+            "selected": false,
+            "text": "BRDETH",
+            "value": "BRDETH"
+          },
+          {
+            "selected": false,
+            "text": "BTCUSDT",
+            "value": "BTCUSDT"
+          },
+          {
+            "selected": false,
+            "text": "BTGBTC",
+            "value": "BTGBTC"
+          },
+          {
+            "selected": false,
+            "text": "BTGETH",
+            "value": "BTGETH"
+          },
+          {
+            "selected": false,
+            "text": "BTSBNB",
+            "value": "BTSBNB"
+          },
+          {
+            "selected": false,
+            "text": "BTSBTC",
+            "value": "BTSBTC"
+          },
+          {
+            "selected": false,
+            "text": "BTSETH",
+            "value": "BTSETH"
+          },
+          {
+            "selected": false,
+            "text": "CDTBTC",
+            "value": "CDTBTC"
+          },
+          {
+            "selected": false,
+            "text": "CDTETH",
+            "value": "CDTETH"
+          },
+          {
+            "selected": false,
+            "text": "CMTBNB",
+            "value": "CMTBNB"
+          },
+          {
+            "selected": false,
+            "text": "CMTBTC",
+            "value": "CMTBTC"
+          },
+          {
+            "selected": false,
+            "text": "CMTETH",
+            "value": "CMTETH"
+          },
+          {
+            "selected": false,
+            "text": "CNDBNB",
+            "value": "CNDBNB"
+          },
+          {
+            "selected": false,
+            "text": "CNDBTC",
+            "value": "CNDBTC"
+          },
+          {
+            "selected": false,
+            "text": "CNDETH",
+            "value": "CNDETH"
+          },
+          {
+            "selected": false,
+            "text": "CTRBTC",
+            "value": "CTRBTC"
+          },
+          {
+            "selected": false,
+            "text": "CTRETH",
+            "value": "CTRETH"
+          },
+          {
+            "selected": false,
+            "text": "DASHBTC",
+            "value": "DASHBTC"
+          },
+          {
+            "selected": false,
+            "text": "DASHETH",
+            "value": "DASHETH"
+          },
+          {
+            "selected": false,
+            "text": "DGDBTC",
+            "value": "DGDBTC"
+          },
+          {
+            "selected": false,
+            "text": "DGDETH",
+            "value": "DGDETH"
+          },
+          {
+            "selected": false,
+            "text": "DLTBNB",
+            "value": "DLTBNB"
+          },
+          {
+            "selected": false,
+            "text": "DLTBTC",
+            "value": "DLTBTC"
+          },
+          {
+            "selected": false,
+            "text": "DLTETH",
+            "value": "DLTETH"
+          },
+          {
+            "selected": false,
+            "text": "DNTBTC",
+            "value": "DNTBTC"
+          },
+          {
+            "selected": false,
+            "text": "DNTETH",
+            "value": "DNTETH"
+          },
+          {
+            "selected": false,
+            "text": "EDOBTC",
+            "value": "EDOBTC"
+          },
+          {
+            "selected": false,
+            "text": "EDOETH",
+            "value": "EDOETH"
+          },
+          {
+            "selected": false,
+            "text": "ELFBTC",
+            "value": "ELFBTC"
+          },
+          {
+            "selected": false,
+            "text": "ELFETH",
+            "value": "ELFETH"
+          },
+          {
+            "selected": false,
+            "text": "ENGBTC",
+            "value": "ENGBTC"
+          },
+          {
+            "selected": false,
+            "text": "ENGETH",
+            "value": "ENGETH"
+          },
+          {
+            "selected": false,
+            "text": "ENJBTC",
+            "value": "ENJBTC"
+          },
+          {
+            "selected": false,
+            "text": "ENJETH",
+            "value": "ENJETH"
+          },
+          {
+            "selected": false,
+            "text": "EOSBTC",
+            "value": "EOSBTC"
+          },
+          {
+            "selected": false,
+            "text": "EOSETH",
+            "value": "EOSETH"
+          },
+          {
+            "selected": false,
+            "text": "ETCBTC",
+            "value": "ETCBTC"
+          },
+          {
+            "selected": false,
+            "text": "ETCETH",
+            "value": "ETCETH"
+          },
+          {
+            "selected": false,
+            "text": "ETHBTC",
+            "value": "ETHBTC"
+          },
+          {
+            "selected": false,
+            "text": "ETHUSDT",
+            "value": "ETHUSDT"
+          },
+          {
+            "selected": false,
+            "text": "EVXBTC",
+            "value": "EVXBTC"
+          },
+          {
+            "selected": false,
+            "text": "EVXETH",
+            "value": "EVXETH"
+          },
+          {
+            "selected": false,
+            "text": "FUELBTC",
+            "value": "FUELBTC"
+          },
+          {
+            "selected": false,
+            "text": "FUELETH",
+            "value": "FUELETH"
+          },
+          {
+            "selected": false,
+            "text": "FUNBTC",
+            "value": "FUNBTC"
+          },
+          {
+            "selected": false,
+            "text": "FUNETH",
+            "value": "FUNETH"
+          },
+          {
+            "selected": false,
+            "text": "GASBTC",
+            "value": "GASBTC"
+          },
+          {
+            "selected": false,
+            "text": "GTOBNB",
+            "value": "GTOBNB"
+          },
+          {
+            "selected": false,
+            "text": "GTOBTC",
+            "value": "GTOBTC"
+          },
+          {
+            "selected": false,
+            "text": "GTOETH",
+            "value": "GTOETH"
+          },
+          {
+            "selected": false,
+            "text": "GVTBTC",
+            "value": "GVTBTC"
+          },
+          {
+            "selected": false,
+            "text": "GVTETH",
+            "value": "GVTETH"
+          },
+          {
+            "selected": false,
+            "text": "GXSBTC",
+            "value": "GXSBTC"
+          },
+          {
+            "selected": false,
+            "text": "GXSETH",
+            "value": "GXSETH"
+          },
+          {
+            "selected": false,
+            "text": "HSRBTC",
+            "value": "HSRBTC"
+          },
+          {
+            "selected": false,
+            "text": "HSRETH",
+            "value": "HSRETH"
+          },
+          {
+            "selected": false,
+            "text": "ICNBTC",
+            "value": "ICNBTC"
+          },
+          {
+            "selected": false,
+            "text": "ICNETH",
+            "value": "ICNETH"
+          },
+          {
+            "selected": false,
+            "text": "ICXBNB",
+            "value": "ICXBNB"
+          },
+          {
+            "selected": false,
+            "text": "ICXBTC",
+            "value": "ICXBTC"
+          },
+          {
+            "selected": false,
+            "text": "ICXETH",
+            "value": "ICXETH"
+          },
+          {
+            "selected": false,
+            "text": "INSBTC",
+            "value": "INSBTC"
+          },
+          {
+            "selected": false,
+            "text": "INSETH",
+            "value": "INSETH"
+          },
+          {
+            "selected": false,
+            "text": "IOTABNB",
+            "value": "IOTABNB"
+          },
+          {
+            "selected": false,
+            "text": "IOTABTC",
+            "value": "IOTABTC"
+          },
+          {
+            "selected": false,
+            "text": "IOTAETH",
+            "value": "IOTAETH"
+          },
+          {
+            "selected": false,
+            "text": "KMDBTC",
+            "value": "KMDBTC"
+          },
+          {
+            "selected": false,
+            "text": "KMDETH",
+            "value": "KMDETH"
+          },
+          {
+            "selected": false,
+            "text": "KNCBTC",
+            "value": "KNCBTC"
+          },
+          {
+            "selected": false,
+            "text": "KNCETH",
+            "value": "KNCETH"
+          },
+          {
+            "selected": false,
+            "text": "LENDBTC",
+            "value": "LENDBTC"
+          },
+          {
+            "selected": false,
+            "text": "LENDETH",
+            "value": "LENDETH"
+          },
+          {
+            "selected": false,
+            "text": "LINKBTC",
+            "value": "LINKBTC"
+          },
+          {
+            "selected": false,
+            "text": "LINKETH",
+            "value": "LINKETH"
+          },
+          {
+            "selected": false,
+            "text": "LRCBTC",
+            "value": "LRCBTC"
+          },
+          {
+            "selected": false,
+            "text": "LRCETH",
+            "value": "LRCETH"
+          },
+          {
+            "selected": false,
+            "text": "LSKBNB",
+            "value": "LSKBNB"
+          },
+          {
+            "selected": false,
+            "text": "LSKBTC",
+            "value": "LSKBTC"
+          },
+          {
+            "selected": false,
+            "text": "LSKETH",
+            "value": "LSKETH"
+          },
+          {
+            "selected": false,
+            "text": "LTCBNB",
+            "value": "LTCBNB"
+          },
+          {
+            "selected": true,
+            "text": "LTCBTC",
+            "value": "LTCBTC"
+          },
+          {
+            "selected": false,
+            "text": "LTCETH",
+            "value": "LTCETH"
+          },
+          {
+            "selected": false,
+            "text": "LTCUSDT",
+            "value": "LTCUSDT"
+          },
+          {
+            "selected": false,
+            "text": "LUNBTC",
+            "value": "LUNBTC"
+          },
+          {
+            "selected": false,
+            "text": "LUNETH",
+            "value": "LUNETH"
+          },
+          {
+            "selected": false,
+            "text": "MANABTC",
+            "value": "MANABTC"
+          },
+          {
+            "selected": false,
+            "text": "MANAETH",
+            "value": "MANAETH"
+          },
+          {
+            "selected": false,
+            "text": "MCOBNB",
+            "value": "MCOBNB"
+          },
+          {
+            "selected": false,
+            "text": "MCOBTC",
+            "value": "MCOBTC"
+          },
+          {
+            "selected": false,
+            "text": "MCOETH",
+            "value": "MCOETH"
+          },
+          {
+            "selected": false,
+            "text": "MDABTC",
+            "value": "MDABTC"
+          },
+          {
+            "selected": false,
+            "text": "MDAETH",
+            "value": "MDAETH"
+          },
+          {
+            "selected": false,
+            "text": "MODBTC",
+            "value": "MODBTC"
+          },
+          {
+            "selected": false,
+            "text": "MODETH",
+            "value": "MODETH"
+          },
+          {
+            "selected": false,
+            "text": "MTHBTC",
+            "value": "MTHBTC"
+          },
+          {
+            "selected": false,
+            "text": "MTHETH",
+            "value": "MTHETH"
+          },
+          {
+            "selected": false,
+            "text": "MTLBTC",
+            "value": "MTLBTC"
+          },
+          {
+            "selected": false,
+            "text": "MTLETH",
+            "value": "MTLETH"
+          },
+          {
+            "selected": false,
+            "text": "NAVBNB",
+            "value": "NAVBNB"
+          },
+          {
+            "selected": false,
+            "text": "NAVBTC",
+            "value": "NAVBTC"
+          },
+          {
+            "selected": false,
+            "text": "NAVETH",
+            "value": "NAVETH"
+          },
+          {
+            "selected": false,
+            "text": "NEBLBNB",
+            "value": "NEBLBNB"
+          },
+          {
+            "selected": false,
+            "text": "NEBLBTC",
+            "value": "NEBLBTC"
+          },
+          {
+            "selected": false,
+            "text": "NEBLETH",
+            "value": "NEBLETH"
+          },
+          {
+            "selected": false,
+            "text": "NEOBNB",
+            "value": "NEOBNB"
+          },
+          {
+            "selected": false,
+            "text": "NEOBTC",
+            "value": "NEOBTC"
+          },
+          {
+            "selected": false,
+            "text": "NEOETH",
+            "value": "NEOETH"
+          },
+          {
+            "selected": false,
+            "text": "NEOUSDT",
+            "value": "NEOUSDT"
+          },
+          {
+            "selected": false,
+            "text": "NULSBNB",
+            "value": "NULSBNB"
+          },
+          {
+            "selected": false,
+            "text": "NULSBTC",
+            "value": "NULSBTC"
+          },
+          {
+            "selected": false,
+            "text": "NULSETH",
+            "value": "NULSETH"
+          },
+          {
+            "selected": false,
+            "text": "OAXBTC",
+            "value": "OAXBTC"
+          },
+          {
+            "selected": false,
+            "text": "OAXETH",
+            "value": "OAXETH"
+          },
+          {
+            "selected": false,
+            "text": "OMGBTC",
+            "value": "OMGBTC"
+          },
+          {
+            "selected": false,
+            "text": "OMGETH",
+            "value": "OMGETH"
+          },
+          {
+            "selected": false,
+            "text": "OSTBNB",
+            "value": "OSTBNB"
+          },
+          {
+            "selected": false,
+            "text": "OSTBTC",
+            "value": "OSTBTC"
+          },
+          {
+            "selected": false,
+            "text": "OSTETH",
+            "value": "OSTETH"
+          },
+          {
+            "selected": false,
+            "text": "POEBTC",
+            "value": "POEBTC"
+          },
+          {
+            "selected": false,
+            "text": "POEETH",
+            "value": "POEETH"
+          },
+          {
+            "selected": false,
+            "text": "POWRBNB",
+            "value": "POWRBNB"
+          },
+          {
+            "selected": false,
+            "text": "POWRBTC",
+            "value": "POWRBTC"
+          },
+          {
+            "selected": false,
+            "text": "POWRETH",
+            "value": "POWRETH"
+          },
+          {
+            "selected": false,
+            "text": "PPTBTC",
+            "value": "PPTBTC"
+          },
+          {
+            "selected": false,
+            "text": "PPTETH",
+            "value": "PPTETH"
+          },
+          {
+            "selected": false,
+            "text": "QSPBNB",
+            "value": "QSPBNB"
+          },
+          {
+            "selected": false,
+            "text": "QSPBTC",
+            "value": "QSPBTC"
+          },
+          {
+            "selected": false,
+            "text": "QSPETH",
+            "value": "QSPETH"
+          },
+          {
+            "selected": false,
+            "text": "QTUMBTC",
+            "value": "QTUMBTC"
+          },
+          {
+            "selected": false,
+            "text": "QTUMETH",
+            "value": "QTUMETH"
+          },
+          {
+            "selected": false,
+            "text": "RCNBNB",
+            "value": "RCNBNB"
+          },
+          {
+            "selected": false,
+            "text": "RCNBTC",
+            "value": "RCNBTC"
+          },
+          {
+            "selected": false,
+            "text": "RCNETH",
+            "value": "RCNETH"
+          },
+          {
+            "selected": false,
+            "text": "RDNBNB",
+            "value": "RDNBNB"
+          },
+          {
+            "selected": false,
+            "text": "RDNBTC",
+            "value": "RDNBTC"
+          },
+          {
+            "selected": false,
+            "text": "RDNETH",
+            "value": "RDNETH"
+          },
+          {
+            "selected": false,
+            "text": "REQBTC",
+            "value": "REQBTC"
+          },
+          {
+            "selected": false,
+            "text": "REQETH",
+            "value": "REQETH"
+          },
+          {
+            "selected": false,
+            "text": "RLCBNB",
+            "value": "RLCBNB"
+          },
+          {
+            "selected": false,
+            "text": "RLCBTC",
+            "value": "RLCBTC"
+          },
+          {
+            "selected": false,
+            "text": "RLCETH",
+            "value": "RLCETH"
+          },
+          {
+            "selected": false,
+            "text": "SALTBTC",
+            "value": "SALTBTC"
+          },
+          {
+            "selected": false,
+            "text": "SALTETH",
+            "value": "SALTETH"
+          },
+          {
+            "selected": false,
+            "text": "SNGLSBTC",
+            "value": "SNGLSBTC"
+          },
+          {
+            "selected": false,
+            "text": "SNGLSETH",
+            "value": "SNGLSETH"
+          },
+          {
+            "selected": false,
+            "text": "SNMBTC",
+            "value": "SNMBTC"
+          },
+          {
+            "selected": false,
+            "text": "SNMETH",
+            "value": "SNMETH"
+          },
+          {
+            "selected": false,
+            "text": "SNTBTC",
+            "value": "SNTBTC"
+          },
+          {
+            "selected": false,
+            "text": "SNTETH",
+            "value": "SNTETH"
+          },
+          {
+            "selected": false,
+            "text": "STORJBTC",
+            "value": "STORJBTC"
+          },
+          {
+            "selected": false,
+            "text": "STORJETH",
+            "value": "STORJETH"
+          },
+          {
+            "selected": false,
+            "text": "STRATBTC",
+            "value": "STRATBTC"
+          },
+          {
+            "selected": false,
+            "text": "STRATETH",
+            "value": "STRATETH"
+          },
+          {
+            "selected": false,
+            "text": "SUBBTC",
+            "value": "SUBBTC"
+          },
+          {
+            "selected": false,
+            "text": "SUBETH",
+            "value": "SUBETH"
+          },
+          {
+            "selected": false,
+            "text": "TNBBTC",
+            "value": "TNBBTC"
+          },
+          {
+            "selected": false,
+            "text": "TNBETH",
+            "value": "TNBETH"
+          },
+          {
+            "selected": false,
+            "text": "TNTBTC",
+            "value": "TNTBTC"
+          },
+          {
+            "selected": false,
+            "text": "TNTETH",
+            "value": "TNTETH"
+          },
+          {
+            "selected": false,
+            "text": "TRIGBNB",
+            "value": "TRIGBNB"
+          },
+          {
+            "selected": false,
+            "text": "TRIGBTC",
+            "value": "TRIGBTC"
+          },
+          {
+            "selected": false,
+            "text": "TRIGETH",
+            "value": "TRIGETH"
+          },
+          {
+            "selected": false,
+            "text": "TRXBTC",
+            "value": "TRXBTC"
+          },
+          {
+            "selected": false,
+            "text": "TRXETH",
+            "value": "TRXETH"
+          },
+          {
+            "selected": false,
+            "text": "VENBNB",
+            "value": "VENBNB"
+          },
+          {
+            "selected": false,
+            "text": "VENBTC",
+            "value": "VENBTC"
+          },
+          {
+            "selected": false,
+            "text": "VENETH",
+            "value": "VENETH"
+          },
+          {
+            "selected": false,
+            "text": "VIBBTC",
+            "value": "VIBBTC"
+          },
+          {
+            "selected": false,
+            "text": "VIBEBTC",
+            "value": "VIBEBTC"
+          },
+          {
+            "selected": false,
+            "text": "VIBEETH",
+            "value": "VIBEETH"
+          },
+          {
+            "selected": false,
+            "text": "VIBETH",
+            "value": "VIBETH"
+          },
+          {
+            "selected": false,
+            "text": "WABIBNB",
+            "value": "WABIBNB"
+          },
+          {
+            "selected": false,
+            "text": "WABIBTC",
+            "value": "WABIBTC"
+          },
+          {
+            "selected": false,
+            "text": "WABIETH",
+            "value": "WABIETH"
+          },
+          {
+            "selected": false,
+            "text": "WAVESBNB",
+            "value": "WAVESBNB"
+          },
+          {
+            "selected": false,
+            "text": "WAVESBTC",
+            "value": "WAVESBTC"
+          },
+          {
+            "selected": false,
+            "text": "WAVESETH",
+            "value": "WAVESETH"
+          },
+          {
+            "selected": false,
+            "text": "WINGSBTC",
+            "value": "WINGSBTC"
+          },
+          {
+            "selected": false,
+            "text": "WINGSETH",
+            "value": "WINGSETH"
+          },
+          {
+            "selected": false,
+            "text": "WTCBNB",
+            "value": "WTCBNB"
+          },
+          {
+            "selected": false,
+            "text": "WTCBTC",
+            "value": "WTCBTC"
+          },
+          {
+            "selected": false,
+            "text": "WTCETH",
+            "value": "WTCETH"
+          },
+          {
+            "selected": false,
+            "text": "XLMBNB",
+            "value": "XLMBNB"
+          },
+          {
+            "selected": false,
+            "text": "XLMBTC",
+            "value": "XLMBTC"
+          },
+          {
+            "selected": false,
+            "text": "XLMETH",
+            "value": "XLMETH"
+          },
+          {
+            "selected": false,
+            "text": "XMRBTC",
+            "value": "XMRBTC"
+          },
+          {
+            "selected": false,
+            "text": "XMRETH",
+            "value": "XMRETH"
+          },
+          {
+            "selected": false,
+            "text": "XRPBTC",
+            "value": "XRPBTC"
+          },
+          {
+            "selected": false,
+            "text": "XRPETH",
+            "value": "XRPETH"
+          },
+          {
+            "selected": false,
+            "text": "XVGBTC",
+            "value": "XVGBTC"
+          },
+          {
+            "selected": false,
+            "text": "XVGETH",
+            "value": "XVGETH"
+          },
+          {
+            "selected": false,
+            "text": "XZCBNB",
+            "value": "XZCBNB"
+          },
+          {
+            "selected": false,
+            "text": "XZCBTC",
+            "value": "XZCBTC"
+          },
+          {
+            "selected": false,
+            "text": "XZCETH",
+            "value": "XZCETH"
+          },
+          {
+            "selected": false,
+            "text": "YOYOBNB",
+            "value": "YOYOBNB"
+          },
+          {
+            "selected": false,
+            "text": "YOYOBTC",
+            "value": "YOYOBTC"
+          },
+          {
+            "selected": false,
+            "text": "YOYOETH",
+            "value": "YOYOETH"
+          },
+          {
+            "selected": false,
+            "text": "ZECBTC",
+            "value": "ZECBTC"
+          },
+          {
+            "selected": false,
+            "text": "ZECETH",
+            "value": "ZECETH"
+          },
+          {
+            "selected": false,
+            "text": "ZRXBTC",
+            "value": "ZRXBTC"
+          },
+          {
+            "selected": false,
+            "text": "ZRXETH",
+            "value": "ZRXETH"
+          }
+        ],
+        "query": "label_values(binance_coin_price,symbol)",
+        "refresh": 0,
+        "regex": "",
+        "sort": 0,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      }
+    ]
+  },
+  "time": {
+    "from": "now-1h",
+    "to": "now"
+  },
+  "timepicker": {
+    "refresh_intervals": [
+      "5s",
+      "10s",
+      "30s",
+      "1m",
+      "5m",
+      "15m",
+      "30m",
+      "1h",
+      "2h",
+      "1d"
+    ],
+    "time_options": [
+      "5m",
+      "15m",
+      "1h",
+      "6h",
+      "12h",
+      "24h",
+      "2d",
+      "7d",
+      "30d"
+    ]
+  },
+  "timezone": "",
+  "title": "Binance Coin Price",
+  "version": 10
+}
