@@ -585,8 +585,8 @@
         "allValue": null,
         "current": {
           "tags": [],
-          "text": "LTCBTC",
-          "value": "LTCBTC"
+          "text": "CDTBTC",
+          "value": "CDTBTC"
         },
         "datasource": "prometheus",
         "hide": 0,
@@ -841,7 +841,7 @@
             "value": "BTSETH"
           },
           {
-            "selected": false,
+            "selected": true,
             "text": "CDTBTC",
             "value": "CDTBTC"
           },
@@ -1206,7 +1206,7 @@
             "value": "LTCBNB"
           },
           {
-            "selected": true,
+            "selected": false,
             "text": "LTCBTC",
             "value": "LTCBTC"
           },
@@ -1854,5 +1854,5 @@
   },
   "timezone": "",
   "title": "Binance Coin Price",
-  "version": 10
+  "version": 11
 }
