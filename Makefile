@@ -2,14 +2,14 @@
 VERSION?=dev
 
 test-libs:
-	go test -v 
+	go test -v ./binance 
 
 
 test: golint test-libs test-integration
 
 golint:
 	gometalinter --install
-	gometalinter ./
+	gometalinter ./binance
 
 dev-dependencies:
 	go get -u github.com/golang/dep/cmd/dep

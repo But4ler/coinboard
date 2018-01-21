@@ -41,13 +41,13 @@ func parsePrices() {
 	for {
 		log.Println("Parsing price")
 		time.Sleep(10 * time.Second)
-		coins, err := binance.RetrievePrices()
+		symbols, err := binance.RetrievePrices()
 		if err != nil {
 			log.Println(err)
 		}
-		for _, coin := range coins {
-			price, _ := strconv.ParseFloat(coin.Price, 64)
-			coinsGauge.WithLabelValues(coin.Symbol).Set(price)
+		for _, s := range symbols {
+			price, _ := strconv.ParseFloat(s.Price, 64)
+			coinsGauge.WithLabelValues(s.Symbol).Set(price)
 		}
 	}
 
