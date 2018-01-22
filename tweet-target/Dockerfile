@@ -13,7 +13,7 @@ RUN CGO_ENABLED=0 GOOS=linux go build -a -tags netgo -ldflags '-w'
 
 # Final image.
 FROM scratch
-LABEL maintainer "Arno Broekhof <arnobroekhof@gmail.com>"
+LABEL maintainer="Arno Broekhof <arnobroekhof@gmail.com>"
 COPY --from=builder /go/src/github.com/arnobroekhof/coinboard/tweet-target .
 COPY --from=builder /go/src/github.com/arnobroekhof/coinboard/tweet-target/ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
 EXPOSE 8609

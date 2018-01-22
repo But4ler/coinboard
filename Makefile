@@ -19,9 +19,9 @@ dev-dependencies:
 	dep ensure
 
 build-targets:
-	 (cd binance-prometheus-target; docker build -f Dockerfile -t arnobroekhof/binance-prometheus-target . )
+	 (cd binance-prometheus-target; docker build --no-cache -f Dockerfile -t arnobroekhof/binance-prometheus-target . )
 	 docker push arnobroekhof/binance-prometheus-target:latest
-	 (cd tweet-target; docker build -f Dockerfile -t arnobroekhof/tweet-target . )
+	 (cd tweet-target; docker build --no-cache -f Dockerfile -t arnobroekhof/tweet-target . )
 	 docker push arnobroekhof/tweet-target:latest
 
 build-prometheus:

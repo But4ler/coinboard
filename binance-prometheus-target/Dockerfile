@@ -7,13 +7,15 @@
 FROM golang:1.9.2 AS builder
 WORKDIR /go/src/github.com/arnobroekhof/coinboard/binance-prometheus-target
 COPY . .
+COPY binance-prometheus-target.go .
 WORKDIR /go/src/github.com/arnobroekhof/coinboard/binance-prometheus-target
-RUN go get -d
+RUN go get -u github.com/golang/dep/cmd/dep
+RUN dep ensure
 RUN CGO_ENABLED=0 GOOS=linux go build -a -tags netgo -ldflags '-w'
 
 # Final image.
 FROM scratch
-LABEL maintainer "Arno Broekhof <arnobroekhof@gmail.com>"
+LABEL maintainer="Arno Broekhof <arnobroekhof@gmail.com>"
 COPY --from=builder /go/src/github.com/arnobroekhof/coinboard/binance-prometheus-target .
 COPY --from=builder /go/src/github.com/arnobroekhof/coinboard/binance-prometheus-target/ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
 EXPOSE 8609

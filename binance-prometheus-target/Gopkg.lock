@@ -3,6 +3,12 @@
 
 [[projects]]
   branch = "master"
+  name = "github.com/arnobroekhof/coinboard"
+  packages = ["binance"]
+  revision = "74df1c3f1004a33df511aaa5269a2e7a145924e0"
+
+[[projects]]
+  branch = "master"
   name = "github.com/beorn7/perks"
   packages = ["quantile"]
   revision = "4c0e84591b9aa9e6dcfdf3e020114cd81f89d5f9"
@@ -33,7 +39,10 @@
 
 [[projects]]
   name = "github.com/prometheus/client_golang"
-  packages = ["prometheus"]
+  packages = [
+    "prometheus",
+    "prometheus/promhttp"
+  ]
   revision = "c5b7fccd204277076155f10851dad72b76a49317"
   version = "v0.8.0"
 
@@ -65,6 +74,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "b273006b39aceeff61b4400d68b03ab3b9212c310242bd07b516a2dee070e502"
+  inputs-digest = "04c4362cd651a2373b43cea409ee852fe3bc2c447f3a6eec9ce30cf327ccb869"
   solver-name = "gps-cdcl"
   solver-version = 1
