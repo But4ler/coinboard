@@ -27,8 +27,14 @@ scrape_configs:
     static_configs:
       - targets: ['prometheus:9090']
   - job_name: binance-prometheus-target
-    scrape_interval: 60s
+    scrape_interval: 15s
     metrics_path: "/metrics"
     static_configs:
     - targets:
       - binance-prometheus-target:8609
+  - job_name: tweet-target
+      scrape_interval: 15s
+      metrics_path: "/metrics"
+      static_configs:
+      - targets:
+        - tweet-target:8609

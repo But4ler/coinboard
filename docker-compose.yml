@@ -51,6 +51,14 @@ services:
         - prometheus
         ports:
         - "127.0.0.1:8609:8609"
+    tweet-target:
+        image: arnobroekhof/tweet-target:latest
+        networks:
+        - prometheus
+        ports:
+        - "127.0.0.1:8610:8610"
+        env_file:
+          - twitter-account.env
 networks:
     prometheus:
         driver: overlay
