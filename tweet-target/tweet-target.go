@@ -81,7 +81,7 @@ func startTwitterStream() {
 		for _, hashTag := range hashTags {
 			go func() {
 				if strings.Contains(tweet.Text, hashTag) {
-					tweetCounter.With(prometheus.Labels{"symbol": strings.TrimLeft(hashTag, "#")}).Inc()
+					tweetCounter.With(prometheus.Labels{"symbol": strings.TrimLeft(hashTag, "#")}).Add(1)
 				}
 			}()
 		}

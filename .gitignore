@@ -7,6 +7,8 @@
 
 twitter-account.env
 
+# MacOS
+.DS_Store
 
 bin/
 

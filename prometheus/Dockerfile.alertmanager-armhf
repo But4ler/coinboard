@@ -1,0 +1,21 @@
+FROM alpine:3.6
+WORKDIR /root/
+
+RUN apk add --update libarchive-tools curl \
+    && curl -sLf https://github.com/prometheus/alertmanager/releases/download/v0.14.0/alertmanager-0.14.0.linux-armv7.tar.gz > alertmanager.tar.gz \
+    && bsdtar -xvf alertmanager.tar.gz -C ./ --strip-components=1 \
+    && apk del libarchive-tools curl \
+    && mkdir /etc/alertmanager \
+    && mkdir -p /etc/alertmanager/template \
+    && cp alertmanager                             /bin/alertmanager \
+    && cp amtool                               /bin/amtool \
+    && rm -rf /root/*
+
+COPY alertmanager.yml /etc/alertmanager/config.yml
+
+EXPOSE     9093
+VOLUME     [ "/alertmanager" ]
+WORKDIR    /alertmanager
+ENTRYPOINT [ "/bin/alertmanager" ]
+CMD        [ "--config.file=/etc/alertmanager/config.yml", \
+             "--storage.path=/alertmanager" ]
