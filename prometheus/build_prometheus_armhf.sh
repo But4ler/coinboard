@@ -8,7 +8,7 @@ unset DOCKER_HOST
 function docker_tag {
   IMAGE_ID=$1
   IMAGE_NAME=$2
-  docker tag ${IMAGE_ID} arnobroekhof/${IMAGE_NAME}:latest
+  docker tag ${IMAGE_ID} arnobroekhof/${IMAGE_NAME}:armhf
 }
 
 function docker_build {
@@ -24,10 +24,9 @@ function docker_build {
 function docker_push {
   IMAGE_ID=$1
   IMAGE_NAME=$2
-  docker push arnobroekhof/${IMAGE_ID}
-  docker push arnobroekhof/${IMAGE_NAME}:latest
+  docker push arnobroekhof/${IMAGE_NAME}:armhf
 }
 
 CUR_DATE=`date +%Y%m%d%H%M`
-docker_build prometheus prometheus/Dockerfile.prometheus ${CWD}/prometheus/ prometheus
-docker_build alertmanager prometheus/Dockerfile.alertmanager ${CWD}/prometheus/ alertmanager
+docker_build prometheus prometheus/Dockerfile.prometheus-armhf ${CWD}/prometheus/ prometheus
+docker_build alertmanager prometheus/Dockerfile.alertmanager-armhf ${CWD}/prometheus/ alertmanager
