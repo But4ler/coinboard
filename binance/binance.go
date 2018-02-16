@@ -12,7 +12,9 @@ import (
 )
 
 const (
-	binanceAPIURI = "https://api.binance.com/api/v3/ticker/price"
+	binanceAPIURI  = "https://api.binance.com"
+	priceUri = binanceAPIURI + "/api/v3/ticker/price"
+	accountInfoUri = binanceAPIURI + "/api/v3/account"
 )
 
 // TODO: find a  way to retrieve the markets from the api
@@ -29,10 +31,12 @@ func RetrievePrices() (Symbols, error) {
 
 	var symbols Symbols
 
+
 	var netClient = &http.Client{
 		Timeout: time.Second * 10,
 	}
-	res, httpErr := netClient.Get(binanceAPIURI)
+
+	res, httpErr := netClient.Get(priceUri)
 
 	// created defer func body res.Body.Close returns error and defer res.Body.Close() doesn't handle it
 	defer func() {
